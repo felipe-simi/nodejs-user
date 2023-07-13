@@ -1,5 +1,5 @@
 import express from 'express';
-import { BaseRouterConfig } from './routes/base.routes';
+import { BaseRouterConfig } from '../route/base.routes';
 
 export class Server {
   private app: express.Application;
