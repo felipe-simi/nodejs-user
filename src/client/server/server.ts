@@ -1,5 +1,5 @@
 import express from "express";
-import { BaseRouterConfig } from "../route/base.routes";
+import { BaseRouterConfig } from "../route/base.route";
 
 export class Server {
   private app: express.Application;
@@ -23,7 +23,7 @@ export class Server {
     });
   };
 
-  public listen = (): void => {
+  listen = (): void => {
     this.app.listen(this.port, () => {
       console.log(`App listening on the port ${this.port}`);
     });
