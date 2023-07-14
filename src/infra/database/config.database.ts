@@ -1,4 +1,4 @@
-import Dotenv from 'dotenv';
+import Dotenv from "dotenv";
 
 Dotenv.config();
 export class DatabaseConfig {
@@ -8,8 +8,14 @@ export class DatabaseConfig {
   static readonly port = parseInt(process.env.DB_PORT as string, 10);
   static readonly username = process.env.DB_USER as string;
 
-  static readonly acquireTimeout = parseInt(process.env.DB_POOL_CONNECTION_TIMEOUT as string, 10);
-  static readonly idleTimeout = parseInt(process.env.DB_POOL_IDLE_TIMEOUT as string, 10);
+  static readonly acquireTimeout = parseInt(
+    process.env.DB_POOL_CONNECTION_TIMEOUT as string,
+    10,
+  );
+  static readonly idleTimeout = parseInt(
+    process.env.DB_POOL_IDLE_TIMEOUT as string,
+    10,
+  );
   static readonly maxPoolSize = parseInt(process.env.DB_POOL_MAX as string, 10);
   static readonly minPoolSize = parseInt(process.env.DB_POOL_MIN as string, 10);
 }
