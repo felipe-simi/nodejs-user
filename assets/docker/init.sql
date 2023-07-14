@@ -1,0 +1,2 @@
+CREATE DATABASE profiles;
+GRANT ALL PRIVILEGES ON DATABASE profiles TO postgres;
