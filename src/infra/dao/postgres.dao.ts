@@ -1,5 +1,5 @@
 import { Sequelize, Transaction } from "sequelize";
-import { DatabaseConfig } from "./config.database";
+import { DatabaseConfig } from "./config.dao";
 
 class Postgres {
   private static _instance: Postgres;
